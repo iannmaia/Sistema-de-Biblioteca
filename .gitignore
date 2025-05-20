@@ -1,29 +1,45 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Logs
+*.log
+hs_err_pid*.log
+hs_err_pid*.jfr
+
+# Compiled source #
+/out/
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+target/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+*.iws
 
-### VS Code ###
+# === System ===
+.DS_Store
+Thumbs.db
+
+# === Maven ===
+.mvn/
+!**/src/main/**/.gitkeep
+!**/src/test/**/.gitkeep
+
+# === Gradle ===
+.gradle/
+build/
+
+# === VS Code (caso alguém use também) ===
 .vscode/
 
-### Mac OS ###
-.DS_Store
+# === Backup files ===
+*.bak
+*.swp
+*.swo
+*~
+
+# === Optional ===
+.env
